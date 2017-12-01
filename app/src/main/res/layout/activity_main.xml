@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.kyleduo.alipayhome.widgets.APHeaderView
+        android:id="@+id/alipay_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.kyleduo.alipayhome.widgets.APSnapView
+            android:id="@id/alipay_snap"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:background="@color/colorhome">
+
+            <LinearLayout
+                android:id="@+id/ll_topcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_speedRepayment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/repayment"
+                    android:gravity="center"
+                    android:text="极速还款"
+                    android:textColor="@color/colorhomeText"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_advanceRepayment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/advancerepayment"
+                    android:gravity="center"
+                    android:text="预约还款"
+                    android:textColor="@color/colorhomeText"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_creditCardhandle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/creditcardhandle"
+                    android:gravity="center"
+                    android:text="信用卡办理"
+                    android:textColor="@color/colorhomeText"/>
+
+                <TextView
+                    android:id="@+id/tv_ownLoan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15dp"
+                    android:drawableTop="@mipmap/ownloan"
+                    android:gravity="center"
+                    android:text="自己贷"
+                    android:textColor="@color/colorhomeText"/>
+            </LinearLayout>
+        </com.kyleduo.alipayhome.widgets.APSnapView>
+
+        <FrameLayout
+            android:id="@+id/alipay_grid_menu"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:paddingBottom="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:background="@color/colorhome">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/lastmessage"></ImageView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="#f3f3f3"></RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_creditCardEvaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:src="@mipmap/creditcardevaluation"></ImageView>
+        </FrameLayout>
+
+        <com.kyleduo.alipayhome.widgets.APBarView
+            android:id="@id/alipay_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorhome">
+
+            <LinearLayout
+                android:id="@+id/bar2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorhome"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_speedRepayment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/repaymenttitle"></ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_advanceRepayment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/advancerepaymenttitle"
+                    android:text="预约还款"></ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_creditCardhandle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/creditcardhandletitle"></ImageView>
+
+                <ImageView
+                    android:id="@+id/iv_ownLoan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ownloantitle"></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="账单"
+                        android:textColor="@color/colorhomeText"></TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bar1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorhome"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:src="@drawable/bar1">
+
+                <ImageView
+                    android:id="@+id/iv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/homelogo"></ImageView>
+            </LinearLayout>
+        </com.kyleduo.alipayhome.widgets.APBarView>
+    </com.kyleduo.alipayhome.widgets.APHeaderView>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/alipay_srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.kyleduo.alipayhome.widgets.APScrollingBehavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/alipay_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</android.support.design.widget.CoordinatorLayout>
